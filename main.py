@@ -94,7 +94,7 @@ def main(config):
     early_stop_callback = EarlyStopping(
         monitor="train_loss",
         min_delta=0.00,
-        patience=10, # if no improvement after 30 epoch, stop learning. 
+        patience=30, # if no improvement after 30 epoch, stop learning. 
         mode="min",
     )
 
